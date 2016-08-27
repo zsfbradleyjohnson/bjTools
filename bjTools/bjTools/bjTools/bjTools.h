@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "bjOther.h"
-#import "bjFoundation.h"
+
 #import "bjKit.h"
+#import "bjKit+Image.h"
+
+#import "bjFoundation.h"
 #import "bjFoundation+String.h"

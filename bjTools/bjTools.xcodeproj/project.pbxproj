@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C6C3BDD1D7186FF00EED968 /* bjKit+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C3BDC1D7186FF00EED968 /* bjKit+Image.m */; };
+		2C6C3BDF1D7188AF00EED968 /* bradleyJohnson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C6C3BDE1D7188AF00EED968 /* bradleyJohnson.jpg */; };
 		2CF9C16F1D717921003BEBDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C16E1D717921003BEBDE /* main.m */; };
 		2CF9C1721D717921003BEBDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C1711D717921003BEBDE /* AppDelegate.m */; };
 		2CF9C17A1D717921003BEBDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF9C1791D717921003BEBDE /* Assets.xcassets */; };
@@ -19,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C6C3BDB1D7186FF00EED968 /* bjKit+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bjKit+Image.h"; sourceTree = "<group>"; };
+		2C6C3BDC1D7186FF00EED968 /* bjKit+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "bjKit+Image.m"; sourceTree = "<group>"; };
+		2C6C3BDE1D7188AF00EED968 /* bradleyJohnson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bradleyJohnson.jpg; sourceTree = "<group>"; };
 		2CF9C16A1D717921003BEBDE /* bjTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bjTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF9C16E1D717921003BEBDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CF9C1701D717921003BEBDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +87,7 @@
 		2CF9C16D1D717921003BEBDE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C6C3BDE1D7188AF00EED968 /* bradleyJohnson.jpg */,
 				2CF9C1791D717921003BEBDE /* Assets.xcassets */,
 				2CF9C17B1D717921003BEBDE /* LaunchScreen.storyboard */,
 				2CF9C17E1D717921003BEBDE /* Info.plist */,
@@ -98,6 +104,8 @@
 				2CF9C19B1D717BF5003BEBDE /* bjOther.m */,
 				2CF9C1941D717B90003BEBDE /* bjKit.h */,
 				2CF9C1951D717B90003BEBDE /* bjKit.m */,
+				2C6C3BDB1D7186FF00EED968 /* bjKit+Image.h */,
+				2C6C3BDC1D7186FF00EED968 /* bjKit+Image.m */,
 				2CF9C1971D717BAF003BEBDE /* bjFoundation.h */,
 				2CF9C1981D717BAF003BEBDE /* bjFoundation.m */,
 				2CF9C19D1D717C31003BEBDE /* bjFoundation+String.h */,
@@ -164,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF9C17D1D717921003BEBDE /* LaunchScreen.storyboard in Resources */,
+				2C6C3BDF1D7188AF00EED968 /* bradleyJohnson.jpg in Resources */,
 				2CF9C17A1D717921003BEBDE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +186,7 @@
 			files = (
 				2CF9C19C1D717BF5003BEBDE /* bjOther.m in Sources */,
 				2CF9C1721D717921003BEBDE /* AppDelegate.m in Sources */,
+				2C6C3BDD1D7186FF00EED968 /* bjKit+Image.m in Sources */,
 				2CF9C1991D717BAF003BEBDE /* bjFoundation.m in Sources */,
 				2CF9C1861D717987003BEBDE /* MainViewController.m in Sources */,
 				2CF9C19F1D717C31003BEBDE /* bjFoundation+String.m in Sources */,
@@ -322,6 +332,7 @@
 				2CF9C1831D717921003BEBDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

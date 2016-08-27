@@ -43,8 +43,12 @@
 //    NSLog(@"%@",[bjFoundation isString:@"da" inString:@"cdfda"]?@"YES":@"NO");
 //    NSLog(@"%@",[bjFoundation isStringIncludeSpace:@"avs "]?@"YES":@"NO");
 //    NSLog(@"%@",[bjFoundation isStringIncludeChinese:@"asdfasdf深asd"]?@"YES":@"NO");
-    NSLog(@"%@",[bjFoundation isStringPureNumber:@"133"]?@"YES":@"NO");
-
+//    NSLog(@"%@",[bjFoundation isStringPureNumber:@"133"]?@"YES":@"NO");
+    
+    
+    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 100, 200, 200)];
+    imageView.image = [bjKit createQRImageWithInfomation:@"bradleyjohnson" codeImageSize:200 logo:[UIImage imageNamed:@"bradleyJohnson.jpg"] red:120 green:40 blue:60];
+    [self.view addSubview:imageView];
 }
 
 
