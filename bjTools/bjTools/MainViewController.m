@@ -9,6 +9,8 @@
 #import "MainViewController.h"
 #import "bjTools/bjTools.h"
 
+#define kDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+
 @interface MainViewController ()
 
 @property (nonatomic , strong) UIButton * validationButton;
@@ -46,9 +48,16 @@
 //    NSLog(@"%@",[bjFoundation isStringPureNumber:@"133"]?@"YES":@"NO");
     
     
-    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 100, 200, 200)];
-    imageView.image = [bjKit createQRImageWithInfomation:@"bradleyjohnson" codeImageSize:200 logo:[UIImage imageNamed:@"bradleyJohnson.jpg"] red:120 green:40 blue:60];
-    [self.view addSubview:imageView];
+//    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 100, 200, 200)];
+//    imageView.image = [bjKit createQRImageWithInfomation:@"bradleyjohnson" codeImageSize:200 logo:[UIImage imageNamed:@"bradleyJohnson.jpg"] red:120 green:40 blue:60];
+//    [self.view addSubview:imageView];
+    
+//    NSLog(@"%.2f",[bjOther diskOfAllSizeMBytes]/1014.0);
+//    NSLog(@"%.2f",[bjOther diskofFreeSizeMBytes]/1024.0);
+//    NSLog(@"%lld",[bjOther fileSizeAtPath:kDocumentPath]);
+//    NSLog(@"%lld",[bjOther folderSizeAtPath:NSHomeDirectory()]);
+    NSLog(@"%@",[bjOther getCurrentDateWithFormat:@"yyyy-MM-dd HH:mm:ss"]);
+
 }
 
 
