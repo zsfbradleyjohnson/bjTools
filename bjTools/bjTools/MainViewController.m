@@ -56,7 +56,7 @@
 //    NSLog(@"%.2f",[bjOther diskofFreeSizeMBytes]/1024.0);
 //    NSLog(@"%lld",[bjOther fileSizeAtPath:kDocumentPath]);
 //    NSLog(@"%lld",[bjOther folderSizeAtPath:NSHomeDirectory()]);
-    NSLog(@"%@",[bjOther getCurrentDateWithFormat:@"yyyy-MM-dd HH:mm:ss"]);
+//    NSLog(@"%@",[bjOther getCurrentDateWithFormat:@"yyyy-MM-dd HH:mm:ss"]);
 
 }
 

@@ -10,6 +10,13 @@
 
 @implementation bjFoundation (String)
 
+#pragma mark - public methods
+
++(BOOL)isStringEmpty:(NSString *)string
+{
+    return !string.length;
+}
+
 +(BOOL)isString:(NSString *)subString inString:(NSString *)string
 {
     if (!subString.length || !string.length) {
@@ -65,5 +72,54 @@
     
     return result;
 }
+
++(BOOL)validatePhoneNumberWithString:(NSString *)string
+{
+    if (!string.length) {
+        return NO;
+    }
+    
+    return [bjFoundation validateWithRegExp:@"^1[3|4|5|7|8]\\d{9}$" and:string];
+}
+
++(BOOL)validateEmailNumberWithString:(NSString *)string
+{
+    if (!string.length) {
+        return NO;
+    }
+    
+    return [bjFoundation validateWithRegExp:@"^[a-zA-Z0-9]{4,}@[a-zA-Z0-9]{2,}\\.com$" and:string];
+
+}
+
++(BOOL)validatePasswordNumberWithString:(NSString *)string
+{
+    if (!string.length) {
+        return NO;
+    }
+    
+    return [bjFoundation validateWithRegExp:@"^[_|[a-zA-Z]][a-zA-Z0-9]{5,17}$" and:string];
+
+}
+
++(BOOL)validateCodeWithString:(NSString *)string
+{
+    if (!string.length) {
+        return NO;
+    }
+    
+    return [bjFoundation validateWithRegExp:@"^\\d{6}$" and:string];
+
+}
+
++(BOOL)validateWithRegExp:(NSString *)regexp and:(NSString *)string
+{
+    NSPredicate * predicate = [NSPredicate predicateWithFormat: @"SELF MATCHES %@", regexp];
+    
+    return [predicate evaluateWithObject:string];
+}
+
+#pragma mark - private methods
+
 
 @end
