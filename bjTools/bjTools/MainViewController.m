@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-#import "bjTools/bjTools.h"
+#import "BJTools/BJTools.h"
 
 #define kDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
 
@@ -42,22 +42,15 @@
 
 -(void)validation
 {
-//    NSLog(@"%@",[bjFoundation isString:@"da" inString:@"cdfda"]?@"YES":@"NO");
-//    NSLog(@"%@",[bjFoundation isStringIncludeSpace:@"avs "]?@"YES":@"NO");
-//    NSLog(@"%@",[bjFoundation isStringIncludeChinese:@"asdfasdf深asd"]?@"YES":@"NO");
-//    NSLog(@"%@",[bjFoundation isStringPureNumber:@"133"]?@"YES":@"NO");
-    
-    
-//    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 100, 200, 200)];
-//    imageView.image = [bjKit createQRImageWithInfomation:@"bradleyjohnson" codeImageSize:200 logo:[UIImage imageNamed:@"bradleyJohnson.jpg"] red:120 green:40 blue:60];
-//    [self.view addSubview:imageView];
-    
-//    NSLog(@"%.2f",[bjOther diskOfAllSizeMBytes]/1014.0);
-//    NSLog(@"%.2f",[bjOther diskofFreeSizeMBytes]/1024.0);
-//    NSLog(@"%lld",[bjOther fileSizeAtPath:kDocumentPath]);
-//    NSLog(@"%lld",[bjOther folderSizeAtPath:NSHomeDirectory()]);
-//    NSLog(@"%@",[bjOther getCurrentDateWithFormat:@"yyyy-MM-dd HH:mm:ss"]);
-
+//    NSLog(@"%.2f",[NSObject diskOfFreeSizeMBytes]);
+//    UIImageView * imgView = [[UIImageView alloc] initWithImage:[UIImage createQRImageWithInfomation:@"https://www.baidu.com" codeImageSize:100.0f logo:nil red:0 green:0 blue:0]];
+//    imgView.backgroundColor = [UIColor redColor];
+//    imgView.frame = CGRectMake(100, 100, 100, 100);
+//    [self.view addSubview:imgView];
+    NSLog(@"%@",[NSString MD5WithLower:YES Bate:16 forString:@"bradleyjohnson"]);
+    NSLog(@"%@",[NSString MD5WithLower:NO Bate:16 forString:@"bradleyjohnson"]);
+    NSLog(@"%@",[NSString MD5WithLower:YES Bate:32 forString:@"bradleyjohnson"]);
+    NSLog(@"%@",[NSString MD5WithLower:NO Bate:32 forString:@"bradleyjohnson"]);
 }
 
 

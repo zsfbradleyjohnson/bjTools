@@ -1,15 +1,14 @@
 //
-//  bjKit+Image.h
+//  UIImage+bjImages.h
 //  bjTools
 //
-//  Created by bradleyjohnson on 16/8/27.
+//  Created by bradleyjohnson on 2016/10/18.
 //  Copyright © 2016年 bradleyjohnson. All rights reserved.
 //
 
-#import "bjKit.h"
 #import <UIKit/UIKit.h>
 
-@interface bjKit (Image)
+@interface UIImage (bjImages)
 
 /**
  *  生成二维码图片

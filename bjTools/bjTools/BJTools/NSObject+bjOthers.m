@@ -1,14 +1,15 @@
 //
-//  bjOther.m
+//  NSObject+bjOthers.m
 //  bjTools
 //
-//  Created by bradleyjohnson on 16/8/27.
+//  Created by bradleyjohnson on 2016/10/18.
 //  Copyright © 2016年 bradleyjohnson. All rights reserved.
 //
 
-#import "bjOther.h"
+#import "NSObject+bjOthers.h"
 
-@implementation bjOther
+@implementation NSObject (bjOthers)
+
 
 +(CGFloat)diskOfAllSizeMBytes
 {
@@ -25,7 +26,7 @@
     return size;
 }
 
-+(CGFloat)diskofFreeSizeMBytes
++(CGFloat)diskOfFreeSizeMBytes
 {
     CGFloat size = 0.0;
     NSError * error;
@@ -73,7 +74,7 @@
     long long folderSize = 0;
     while ((fileName = [filesEnumerator nextObject]) != nil) {
         NSString * filePath = [folderpath stringByAppendingPathComponent:fileName];
-        folderSize += [bjOther fileSizeAtPath:filePath];
+        folderSize += [NSObject fileSizeAtPath:filePath];
     }
     
     return folderSize;

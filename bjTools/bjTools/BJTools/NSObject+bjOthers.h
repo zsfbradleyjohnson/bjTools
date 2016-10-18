@@ -1,15 +1,15 @@
 //
-//  bjOther.h
+//  NSObject+bjOthers.h
 //  bjTools
 //
-//  Created by bradleyjohnson on 16/8/27.
+//  Created by bradleyjohnson on 2016/10/18.
 //  Copyright © 2016年 bradleyjohnson. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface bjOther : NSObject
+@interface NSObject (bjOthers)
 
 /**
  *  获取磁盘总空间大小
@@ -26,7 +26,7 @@
  *
  *  @return 磁盘可用空间大小
  */
-+(CGFloat)diskofFreeSizeMBytes;
++(CGFloat)diskOfFreeSizeMBytes;
 
 
 
@@ -63,6 +63,8 @@
  *  @return 当前时间字符串
  */
 +(NSString *)getCurrentDateWithFormat:(NSString *)format;
+
+
 
 
 @end

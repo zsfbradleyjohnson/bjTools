@@ -1,14 +1,14 @@
 //
-//  bjKit+Image.m
+//  UIImage+bjImages.m
 //  bjTools
 //
-//  Created by bradleyjohnson on 16/8/27.
+//  Created by bradleyjohnson on 2016/10/18.
 //  Copyright © 2016年 bradleyjohnson. All rights reserved.
 //
 
-#import "bjKit+Image.h"
+#import "UIImage+bjImages.h"
 
-@implementation bjKit (Image)
+@implementation UIImage (bjImages)
 
 + (UIImage *)createQRImageWithInfomation:(NSString *)infomation
                            codeImageSize:(CGFloat)size

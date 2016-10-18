@@ -1,14 +1,15 @@
 //
-//  bjFoundation+String.h
+//  NSString+bjStrings.h
 //  bjTools
 //
-//  Created by bradleyjohnson on 16/8/27.
+//  Created by bradleyjohnson on 2016/10/18.
 //  Copyright © 2016年 bradleyjohnson. All rights reserved.
 //
 
-#import "bjFoundation.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface bjFoundation (String)
+@interface NSString (bjStrings)
 
 /**
  *  判断字符串是否为空
@@ -131,5 +132,22 @@
 +(BOOL)validateCodeWithString:(NSString *)string;
 
 
+
+
+#pragma mark - encoding
+/**
+ 字符串中文转码
+
+ @return 转码后的字符串
+ */
+-(NSString *)chineseTranscoding;
+
+
+
+
+
+#pragma mark - encrypt
+
++(NSString *)MD5WithLower:(BOOL)lower Bate:(NSUInteger)bate forString:(NSString *)string;
 
 @end
