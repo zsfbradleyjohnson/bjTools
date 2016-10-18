@@ -47,13 +47,12 @@
 //    imgView.backgroundColor = [UIColor redColor];
 //    imgView.frame = CGRectMake(100, 100, 100, 100);
 //    [self.view addSubview:imgView];
-    NSLog(@"%@",[NSString MD5WithLower:YES Bate:16 forString:@"bradleyjohnson"]);
-    NSLog(@"%@",[NSString MD5WithLower:NO Bate:16 forString:@"bradleyjohnson"]);
-    NSLog(@"%@",[NSString MD5WithLower:YES Bate:32 forString:@"bradleyjohnson"]);
-    NSLog(@"%@",[NSString MD5WithLower:NO Bate:32 forString:@"bradleyjohnson"]);
+//    NSLog(@"%@",[NSString MD5WithLower:YES Bate:16 forString:@"bradleyjohnson"]);
+//    NSLog(@"%@",[NSString MD5WithLower:NO Bate:16 forString:@"bradleyjohnson"]);
+//    NSLog(@"%@",[NSString MD5WithLower:YES Bate:32 forString:@"bradleyjohnson"]);
+//    NSLog(@"%@",[NSString MD5WithLower:NO Bate:32 forString:@"bradleyjohnson"]);
+    NSLog(@"%@",[NSObject getCurrentDeviceModel]);
 }
-
-
 
 
 

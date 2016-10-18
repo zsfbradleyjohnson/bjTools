@@ -67,4 +67,12 @@
 
 
 
+
+/**
+ 获取当前设备型号
+
+ @return 型号
+ */
++(NSString *)getCurrentDeviceModel;
+
 @end
