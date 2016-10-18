@@ -8,7 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+// NSString 处理扩展类
 #import "NSString+bjStrings.h"
+
+// UIImage  处理扩展类
 #import "UIImage+bjImages.h"
+
+// NSObject 处理扩展类
 #import "NSObject+bjOthers.h"
 
