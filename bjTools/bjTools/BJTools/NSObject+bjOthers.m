@@ -160,4 +160,17 @@
     return platform;
 }
 
++(NSInteger)getFileSizeWithPath:(NSString *)path
+{
+    NSInteger size = 0;
+    if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
+        NSDictionary *dict = [[NSFileManager defaultManager] attributesOfItemAtPath:path error:nil];
+        size = [dict[@"NSFileSize"] integerValue];
+            
+        return size;
+    }else{
+        return NSNotFound;
+    }
+}
+
 @end

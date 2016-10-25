@@ -11,6 +11,7 @@
 
 @interface NSString (bjStrings)
 
+#pragma mark - StringOperation
 /**
  *  判断字符串是否为空
  *
@@ -71,6 +72,18 @@
 
 
 
+
+/**
+ 获取一定位数随机的可包含数字、小写字母、大写字母中任意一种以上的字符串
+
+ @param length 位数
+ @param number 包含数字
+ @param lower  包含小写字母
+ @param upper  包含大写字母
+
+ @return 字符串
+ */
++(NSString *)getRandomStringLength:(NSInteger)length number:(BOOL)number lower:(BOOL)lower upper:(BOOL)upper;
 
 #pragma mark - RegExp
 /**
@@ -148,6 +161,15 @@
 
 #pragma mark - encrypt
 
-+(NSString *)MD5WithLower:(BOOL)lower Bate:(NSUInteger)bate forString:(NSString *)string;
+/**
+ MD5 加密
+
+ @param lower  大写或是小写加密
+ @param length   32位或16位
+ @param string 待加密字符串
+
+ @return 加密字符串
+ */
++(NSString *)MD5WithLower:(BOOL)lower length:(NSUInteger)length forString:(NSString *)string;
 
 @end

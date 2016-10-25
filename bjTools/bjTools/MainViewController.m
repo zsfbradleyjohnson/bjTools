@@ -47,11 +47,14 @@
 //    imgView.backgroundColor = [UIColor redColor];
 //    imgView.frame = CGRectMake(100, 100, 100, 100);
 //    [self.view addSubview:imgView];
-//    NSLog(@"%@",[NSString MD5WithLower:YES Bate:16 forString:@"bradleyjohnson"]);
-//    NSLog(@"%@",[NSString MD5WithLower:NO Bate:16 forString:@"bradleyjohnson"]);
-//    NSLog(@"%@",[NSString MD5WithLower:YES Bate:32 forString:@"bradleyjohnson"]);
-//    NSLog(@"%@",[NSString MD5WithLower:NO Bate:32 forString:@"bradleyjohnson"]);
-    NSLog(@"%@",[NSObject getCurrentDeviceModel]);
+//    NSLog(@"%@",[NSString MD5WithLower:YES length:16 forString:@"bradleyjohnson"]);
+//    NSLog(@"%@",[NSString MD5WithLower:NO length:16 forString:@"bradleyjohnson"]);
+//    NSLog(@"%@",[NSString MD5WithLower:YES length:32 forString:@"bradleyjohnson"]);
+//    NSLog(@"%@",[NSString MD5WithLower:NO length:32 forString:@"bradleyjohnson"]);
+//    NSLog(@"%@",[NSObject getCurrentDeviceModel]);
+//    NSLog(@"--- : %@",[NSString getRandomStringLength:32 number:NO lower:NO upper:YES]);
+    NSLog(@"--- : %ld",(long)[NSObject getFileSizeWithPath:[[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"qaq.dmg"]]);
+//    NSLog(@"--- : %ld",(long)[NSObject getFileSizeWithPath:[[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"rubygems.zip"]]);
 }
 
 

@@ -75,6 +75,52 @@
     return result;
 }
 
++(NSString *)getRandomStringLength:(NSInteger)length number:(BOOL)number lower:(BOOL)lower upper:(BOOL)upper
+{
+    NSString * randomString = [NSString new];
+    
+    if (!number && !lower && !upper) {
+        return @"";
+    }
+    
+    for (NSInteger index = 0; index < length; index++) {
+        
+        int way = arc4random()%3;
+        
+        switch (way) {
+            case 0:
+            {
+                if (number) {
+                    randomString = [randomString stringByAppendingString:[NSString stringWithFormat:@"%d",arc4random()%10]];
+                }else{
+                    index--;
+                }
+            }
+                break;
+            case 1:
+            {
+                if (upper) {
+                    randomString = [randomString stringByAppendingString:[NSString stringWithFormat:@"%c",(arc4random()%26)+65]];
+                }else{
+                    index--;
+                }
+            }
+                break;
+            case 2:
+            {
+                if (lower) {
+                    randomString = [randomString stringByAppendingString:[NSString stringWithFormat:@"%c",(arc4random()%26)+97]];
+                }else{
+                    index--;
+                }
+            }
+                break;
+        }
+    }
+    
+    return randomString;
+}
+
 +(BOOL)validatePhoneNumberWithString:(NSString *)string
 {
     if (!string.length) {
@@ -133,7 +179,7 @@
     return string;
 }
 
-+(NSString *)MD5WithLower:(BOOL)lower Bate:(NSUInteger)bate forString:(NSString *)string
++(NSString *)MD5WithLower:(BOOL)lower length:(NSUInteger)length forString:(NSString *)string
 {
     const char* input = [string UTF8String];
     unsigned char result[CC_MD5_DIGEST_LENGTH];
@@ -147,7 +193,7 @@
     
     NSString  * resultString = digest;
     
-    if (bate == 16) {
+    if (length == 16) {
         for (int i=0; i<24; i++) {
             resultString = [digest substringWithRange:NSMakeRange(8, 16)];
         }

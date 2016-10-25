@@ -75,4 +75,17 @@
  */
 +(NSString *)getCurrentDeviceModel;
 
+
+
+
+
+/**
+ 获取指定沙盒路径的文件大小
+
+ @param path 指定绝对路径
+
+ @return 文件大小
+ */
++(NSInteger)getFileSizeWithPath:(NSString *)path;
+
 @end
